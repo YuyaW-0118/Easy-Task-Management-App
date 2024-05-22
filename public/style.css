@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: 70% 0%;
+    transition: background-image 0.5s ease;
+}
+
+
+
+body.queue-mode {
+    background-image: url('../pic/queue.jpg');
+    mix-blend-mode: multiply;
+}
+
+body.stack-mode {
+    background-image: url('../pic/stack.jpg');
+    mix-blend-mode: multiply;
+}
+
+body.priority-queue-mode {
+    background-image: url('../pic/priority-queue.jpg');
+    mix-blend-mode: multiply;
+    background-size: 20%;
+}
+
+body.auth-page {
+    background-image: none; /* ログインページには背景画像を表示しない */
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.5s ease;
+    max-width: 50%;
+}
+
+li.highlight {
+    background-color: #ffcccb; /* 軽く赤色にすることで強調 */
+}
+
+li.delete-task {
+    color: rgb(240, 106, 75); /* 消されるタスクを赤に */
+}
+
+input {
+    font-size: 1rem;
+    background-color: rgb(245, 254, 255);
+}
+
+button {
+    background-color: rgb(245, 254, 255);
+    margin-left: 10px;
+	border-radius: 4px;
+	border-width: 1px;
+    font-size: 1rem;
+}
+
+#newTask {
+	border-radius: 4px;
+	border-width: 1px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: white;
+}
